@@ -25,12 +25,11 @@ jobs:
         pwd
         echo "Files in root:"
         ls -la
-        echo "Files in ai-news-automation:"
-        ls -la ai-news-automation/ || echo "ai-news-automation directory not found"
+        echo "Looking for Python files:"
+        find . -name "*.py" -type f
     
     - name: Install dependencies
       run: |
-        cd ai-news-automation
         echo "Installing dependencies..."
         echo "Python3 version:"
         python3 --version
@@ -46,7 +45,6 @@ jobs:
         RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
         FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
       run: |
-        cd ai-news-automation
         echo "Starting AI News Bot..."
         echo "Python3 version:"
         python3 --version
@@ -61,10 +59,10 @@ jobs:
       if: always()
       run: |
         echo "Checking for logs..."
-        ls -la ai-news-automation/ || true
-        if [ -f ai-news-automation/ai_news_bot.log ]; then
+        ls -la || true
+        if [ -f ai_news_bot.log ]; then
           echo "Log file found:"
-          cat ai-news-automation/ai_news_bot.log
+          cat ai_news_bot.log
         else
           echo "No log file found"
         fi
@@ -74,5 +72,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ai-news-bot-logs
-        path: ai-news-automation/ai_news_bot.log
+        path: ai_news_bot.log
         if-no-files-found: ignore
