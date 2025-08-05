@@ -1,0 +1,25 @@
+2025-08-01 12:59:39,513 - __main__ - INFO - Starting AI News Bot with Firecrawl Search...
+2025-08-01 12:59:39,513 - email_sender - INFO - Email configuration validated successfully
+2025-08-01 12:59:39,513 - __main__ - INFO - Searching for AI news articles...
+2025-08-01 12:59:39,513 - news_fetcher - INFO - Searching for: artificial intelligence news
+2025-08-01 12:59:40,525 - news_fetcher - INFO - Found 3 articles for 'artificial intelligence news'
+2025-08-01 12:59:40,525 - news_fetcher - INFO - Searching for: OpenAI ChatGPT GPT news
+2025-08-01 12:59:41,694 - news_fetcher - INFO - Found 3 articles for 'OpenAI ChatGPT GPT news'
+2025-08-01 12:59:41,695 - news_fetcher - INFO - Searching for: Google AI Gemini DeepMind
+2025-08-01 12:59:42,616 - news_fetcher - INFO - Found 2 articles for 'Google AI Gemini DeepMind'
+2025-08-01 12:59:42,617 - news_fetcher - INFO - Searching for: machine learning AI startups funding
+2025-08-01 12:59:43,603 - news_fetcher - INFO - Found 2 articles for 'machine learning AI startups funding'
+2025-08-01 12:59:43,603 - news_fetcher - INFO - Searching for: AI regulation policy government
+2025-08-01 12:59:44,692 - news_fetcher - INFO - Found 2 articles for 'AI regulation policy government'
+2025-08-01 12:59:44,692 - news_fetcher - INFO - Searching for: AI research breakthrough science
+2025-08-01 12:59:44,891 - news_fetcher - ERROR - Error in search: Unexpected error during search: Status code 429. Rate limit exceeded. Consumed (req/min): 6, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 55s, resets at Fri Aug 01 2025 11:00:39 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+2025-08-01 12:59:44,893 - news_fetcher - INFO - Found 0 articles for 'AI research breakthrough science'
+2025-08-01 12:59:44,893 - __main__ - INFO - Found 12 AI-relevant articles
+2025-08-01 12:59:44,893 - __main__ - INFO -   1. OpenAI prepares to launch GPT-5 in August, The Verge ... (Score: 1.00) - Reuters
+2025-08-01 12:59:44,893 - __main__ - INFO -   2. ChatGPT: Everything you need to know about the AI chatbot (Score: 1.00) - TechCrunch
+2025-08-01 12:59:44,893 - __main__ - INFO -   3. AI - Artificial Intelligence (Score: 1.00) - The Verge
+2025-08-01 12:59:44,893 - __main__ - INFO -   4. AI News & Artificial Intelligence (Score: 1.00) - TechCrunch
+2025-08-01 12:59:44,893 - __main__ - INFO -   5. North America takes the bulk of AI VC investments, despite ... (Score: 0.75) - TechCrunch
+2025-08-01 12:59:44,893 - __main__ - INFO - Sending email digest...
+2025-08-01 12:59:46,082 - email_sender - INFO - Email sent successfully to moritzkremb@gmail.com
+2025-08-01 12:59:46,082 - __main__ - INFO - AI News Bot with Firecrawl Search completed successfully!
